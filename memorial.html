@@ -18,8 +18,94 @@ header .wrap{display:grid !important;grid-template-columns:minmax(0,1fr) auto;al
 header .wrap > div:first-child{min-width:0}
 header .wrap .language{margin:0;justify-self:end;white-space:nowrap}
 @media(max-width:520px){header .wrap{grid-template-columns:1fr;row-gap:10px}.language{justify-self:start !important}}
+
+/* Layout common to the Portuguese and English versions of the Evaluation Kit. */
+:root { --kit-content-width: 1080px; }
+
+.page,
+.wrap {
+  width: min(var(--kit-content-width), calc(100% - 40px)) !important;
+}
+
+header .page,
+header .wrap {
+  min-height: 76px;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 24px;
+}
+
+header .page > div:first-child,
+header .wrap > div:first-child {
+  min-width: 0;
+}
+
+header .language {
+  margin: 0 !important;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+header .language a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+}
+
+main.page,
+main.wrap {
+  margin-top: 36px !important;
+  margin-bottom: 54px !important;
+  padding: 42px 58px !important;
+}
+
+main.wrap > h1,
+main.page > h1 {
+  margin-top: 0 !important;
+}
+
+/* Same introductory block in the two versions of the Specification. */
+main.wrap > h1 + .meta {
+  margin-top: 10px !important;
+  margin-bottom: 4px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  color: var(--muted) !important;
+  font-size: .95rem !important;
+  line-height: 1.45 !important;
+}
+
+main.wrap > h1 + .meta strong {
+  color: var(--muted) !important;
+  font-size: inherit !important;
+}
+
+@media (max-width: 650px) {
+  .page,
+  .wrap { width: min(100% - 28px, var(--kit-content-width)) !important; }
+
+  main.page,
+  main.wrap { padding: 30px 22px !important; }
+}
+
+@media (max-width: 520px) {
+  header .page,
+  header .wrap {
+    grid-template-columns: 1fr;
+    align-items: start;
+    row-gap: 10px;
+  }
+
+  header .language { justify-self: start; }
+}
+
 </style>
-  <link rel="stylesheet" href="kit.css">
 </head>
 <body>
 <header><div class="wrap">

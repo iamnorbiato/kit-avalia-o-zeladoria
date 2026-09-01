@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Consolidated Specification | Organizational Data Stewardship Framework</title>
+<style>
+:root{--navy:#082b57;--teal:#007b83;--orange:#d76500;--ink:#17212d;--muted:#586575;--line:#d8e1e6;--mist:#f3f7f8}*{box-sizing:border-box}body{margin:0;background:var(--mist);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}header{background:var(--navy);color:#fff;border-bottom:5px solid var(--orange)}header .wrap{padding:19px 0;display:flex;align-items:center;gap:12px}header a{color:#fff;text-decoration:none;font-weight:700}.eyebrow{display:block;color:#d8e8f2;font-size:.79rem;letter-spacing:.1em;text-transform:uppercase}.language{margin-left:auto;display:flex;gap:8px}.language a{border:1px solid #94b6ce;border-radius:4px;padding:5px 8px;font-size:.78rem}.language a.active{background:#fff;color:#082b57}main{margin:36px auto 54px;padding:42px 58px;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 4px 16px rgba(8,43,87,.05)}h1{margin:0 0 8px;color:var(--navy);font-size:2.15rem;line-height:1.17}h2{margin:38px 0 13px;padding-top:6px;color:var(--navy);font-size:1.5rem;line-height:1.25;border-top:1px solid var(--line)}h3{margin:28px 0 9px;color:var(--teal);font-size:1.16rem}.meta{margin:4px 0;color:var(--muted);font-size:.95rem}p{margin:0 0 16px}ul,ol{margin:0 0 18px;padding-left:25px}li{margin:6px 0}table{width:100%;margin:22px 0 30px;border-collapse:collapse;font-size:.9rem}th,td{padding:10px 11px;border:1px solid var(--line);vertical-align:top;text-align:left}th{background:#e7f2f3;color:#123d45;font-weight:700}tr:nth-child(even)td{background:#fafcfc}.source{color:var(--muted);font-size:.9rem;font-style:italic}.callout{margin:30px 0 0;padding:17px 19px;border-left:4px solid var(--teal);background:#e6f2f3;color:#173a40}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.button{display:inline-block;padding:12px 16px;border-radius:5px;background:var(--navy);color:#fff;text-decoration:none;font-weight:700}.button.alt{background:var(--teal)}footer{padding:25px 0 36px;color:var(--muted);font-size:.9rem;text-align:center}@media(max-width:650px){main{padding:30px 22px}h1{font-size:1.75rem}table{font-size:.8rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div>
+<span class="eyebrow">Evaluation Kit</span><a href="index-en.html">Organizational Data Stewardship Framework</a>
+</div>
+<nav class="language" aria-label="Language"><a href="especificacao.html">🇧🇷 PT</a><a class="active" href="especificacao-en.html">🇬🇧 EN</a></nav>
+</div></header><main class="wrap">
+<h1>Organizational Data Stewardship Framework</h1>
+<p class="meta"><strong>Consolidated specification of the artifact, version 2.0</strong></p>
+<p class="meta">Author: Marco Antonio Norbiato</p>
+<p class="meta">Status: preliminary version for expert assessment</p>
+<p class="meta">Purpose: to present the components, internal relationships, and limits of the Organizational Data Stewardship Framework.</p>
+<h2>1. Presentation</h2>
+<p>This document presents the preliminary version of the Organizational Data Stewardship Framework developed in this research. The artifact organizes the relationship between Data Governance guidelines and the continuing activities of defining responsibilities, coordinating across areas, recording decisions, referring occurrences, and monitoring data assets.</p>
+<p>Data Stewardship is treated as a structured organizational practice. Its function may be performed by a formally designated data steward, by participants distributed among business domains, or by a collegial body. This possibility does not remove the need to identify responsibilities, decision rights, and limits of action applicable to each participant or body.</p>
+<p>This version will be presented to experts through an Evaluation Kit. The assessment will examine the clarity of the components, the internal coherence of the proposed relationships, and the perceived applicability of the framework. It will not encompass implementation or allow its effects in an organization to be demonstrated.</p>
+<h2>2. Purpose, scope, and limits</h2>
+<p>The framework is intended to organize responsibilities, decision rights, coordination mechanisms, and records related to Data Stewardship within Data Governance. Its structure makes it possible to identify who participates in decisions, how data-related occurrences are handled, which information must be recorded, and how responsibilities may be distributed according to the organizational structure.</p>
+<p>The artifact encompasses strategic, tactical, and operational levels. It focuses on the relationships among Data Governance, the Data Stewardship function, business domains, Data Custody, and Data Curation.</p>
+<p>The framework defines:</p>
+<ul>
+<li>participating roles, functions, and bodies;</li>
+<li>responsibilities, decision rights, and limits of action;</li>
+<li>coordination mechanisms among business areas, technical functions, and Data Governance bodies;</li>
+<li>procedures for recording, referring, monitoring, reviewing, and closing occurrences;</li>
+<li>information related to data integrity, quality, and traceability; and</li>
+<li>forms of adaptation to centralized, federated, and hybrid structures.</li>
+</ul>
+<p>The framework does not define a universal organizational chart, mandatory positions, a fixed number of professionals, specific tools, universal technical indicators, or legal, security, privacy, audit, and compliance procedures. It also does not establish an implementation roadmap for a specific organization.</p>
+<h2>3. Overall architecture</h2>
+<p>The framework architecture organizes the requirements identified in the Systematic Literature Review into elements with distinct functions. Layers represent direction and operationalization functions; dimensions indicate the aspects considered in the execution of these functions; and organizational levels identify the settings in which decisions, coordination, and data-related activities occur. This distinction prevents layers, dimensions, and levels from being treated as equivalent elements. The operational architecture presented in this specification derives from the preliminary theoretical model underlying the framework and materializes its layers, dimensions, organizational levels, and expected effects in components, roles, decision rights, flows, and records.</p>
+<p>The first layer, the <strong>Normative Direction Layer: Data Governance</strong>, brings together principles, policies, standards, priorities, decision rights, and accountability criteria defined by Data Governance. The second, the <strong>Coordination and Operationalization Layer: Data Stewardship</strong>, brings together the activities through which Data Stewardship links institutional guidelines to business domains, technical functions, and occurrences identified during data processing and use.</p>
+<p>The two layers are crossed by five dimensions:</p>
+<ol type="A">
+<li>Roles and Decision Rights;</li>
+<li>Sociotechnical Coordination;</li>
+<li>Accountability and Duty of Care;</li>
+<li>Integrity, Quality, and Traceability;</li>
+<li>Organizational Adaptation.</li>
+</ol>
+<p>The framework considers three organizational levels: strategic, tactical, and operational. These levels indicate where decisions and activities take place, without tying them to universal positions or establishing a linear hierarchy. An occurrence identified at the operational level may require tactical coordination and strategic decision-making. Likewise, a guideline defined at the strategic level must be translated into activities performed at the other levels.</p>
+<p>The framework operation is complemented by occurrence-handling flows and records that allow for identification of the data, participants, decisions, actions, and remaining limitations.</p>
+<h2>4. Framework elements, roles, and bodies</h2>
+<p>The framework is composed of two functional layers, five cross-cutting dimensions, three organizational levels, participating roles and decision-making bodies, an occurrence-handling flow, and records that support coordination and accountability. These elements are interdependent: the layers organize the direction and operationalization functions; the dimensions define the aspects to be considered in their execution; and the levels indicate where decisions, coordination, and activities occur.</p>
+<p>The framework does not prescribe a single organizational design. It requires, however, that each organization identify the participants, their responsibilities, the rights they hold, the limits of their action, and the body competent to decide or receive a referral when an issue exceeds local competence.</p>
+<h2>5. Roles, decision rights, and limits of action</h2>
+<p>The framework distinguishes the responsibilities, decision rights, and limits of the principal participants. The division below does not create mandatory positions; it clarifies the minimum responsibilities that must be assigned within each organization.</p>
+<table>
+<tr>
+<th>Body or function</th>
+<th>Main responsibility</th>
+<th>Decision rights</th>
+<th>Limits of action</th>
+<th>Predominant level</th>
+</tr>
+<tr>
+<td>Data Governance</td>
+<td>Define principles, policies, standards, priorities, and accountability criteria.</td>
+<td>Approve policies and standards; establish decision rights; resolve institutional conflicts.</td>
+<td>Does not perform technical controls or routine data-treatment activities.</td>
+<td>Strategic and tactical</td>
+</tr>
+<tr>
+<td>Data Stewardship function</td>
+<td>Translate guidelines into practices, coordinate responsibilities, monitor occurrences, and refer decisions.</td>
+<td>Decide on referrals within approved limits; recommend responsible parties; propose adjustments to rules and procedures.</td>
+<td>Does not change institutional policies, unilaterally designate responsible parties, or replace domain and technical competencies.</td>
+<td>Tactical and operational</td>
+</tr>
+<tr>
+<td>Data domain owner</td>
+<td>Define meaning, purpose, business rules, quality requirements, and use conditions for domain data.</td>
+<td>Decide on definitions and domain rules; approve requirements related to use of data under their responsibility.</td>
+<td>Does not alter corporate standards or decide alone on matters affecting other domains.</td>
+<td>Tactical and operational</td>
+</tr>
+<tr>
+<td>Data Custody</td>
+<td>Maintain availability, storage, access, protection, and technical integrity of data.</td>
+<td>Define the technical form of applying controls approved by the organization.</td>
+<td>Does not define meaning, business rules, institutional policies, or domain priorities.</td>
+<td>Operational</td>
+</tr>
+<tr>
+<td>Data Curation</td>
+<td>Record context, provenance, metadata, transformations, and reuse conditions.</td>
+<td>Define how such information is recorded and maintained according to approved standards.</td>
+<td>Does not establish policies, decision rights, or business responsibilities.</td>
+<td>Operational</td>
+</tr>
+</table>
+<h2>6. Cross-cutting dimensions of the framework</h2>
+<h3>6.1 Dimension A: Roles and Decision Rights</h3>
+<p>This dimension identifies the participants involved in data-related activities and establishes their responsibilities, decision rights, and limits of action. It seeks to prevent decisions from being made without defined authority or responsibilities from being assumed by an inappropriate function.</p>
+<h3>6.2 Dimension B: Sociotechnical Coordination</h3>
+<p>This dimension organizes communication and coordination among business domains, technical functions, and Data Governance bodies. It includes shared definition of data, referral of issues, and coordination of occurrences involving more than one area.</p>
+<h3>6.3 Dimension C: Accountability and Duty of Care</h3>
+<p>This dimension requires records of participants, criteria, decisions, actions, and responsible parties, enabling later examination and review when new information, change of context, error, or substantiated challenge arises.</p>
+<h3>6.4 Dimension D: Integrity, Quality, and Traceability</h3>
+<p>This dimension addresses the identification, meaning, origin, transformations, rules of use, and known limitations of data. It treats integrity, quality, and traceability as related but distinct elements.</p>
+<h3>6.5 Dimension E: Organizational Adaptation</h3>
+<p>This dimension enables the framework to be applied in centralized, federated, or hybrid structures. Adaptation may change terminology and distribution of participants, but it must preserve defined responsibilities, decision rights, coordination, records, monitoring, and review.</p>
+<h2>7. Occurrence-handling flow</h2>
+<p>The flow organizes the treatment of occurrences related to data. It identifies the responsibility predominant at each stage, the activity to be performed, and the record or referral condition expected.</p>
+<table>
+<tr>
+<th>Stage</th>
+<th>Predominant responsibility</th>
+<th>Activity</th>
+<th>Record or referral condition</th>
+</tr>
+<tr>
+<td>Identification and recording</td>
+<td>Participant who identifies the occurrence and the Data Stewardship function.</td>
+<td>Describe the occurrence, identify affected data and domains, record its origin, and collect available evidence.</td>
+<td>Occurrence record, monitoring owner, date, initial impact, and evidence.</td>
+</tr>
+<tr>
+<td>Initial analysis</td>
+<td>Data Stewardship function, domain owner, and involved technical functions.</td>
+<td>Examine meaning, origin, impact, applicable rules, previous decisions, and required competencies.</td>
+<td>Occurrence classification, consulted participants, information collected, and need for referral.</td>
+</tr>
+<tr>
+<td>Decision or referral</td>
+<td>Body that holds the decision right.</td>
+<td>Decide within assigned competence or refer the issue to another body.</td>
+<td>Refer when the occurrence affects more than one domain, requires policy change, involves material risk, or exceeds participants’ competence.</td>
+</tr>
+<tr>
+<td>Execution and monitoring</td>
+<td>Responsible parties defined in the decision, monitored by Data Stewardship.</td>
+<td>Carry out actions, update records, and communicate the decision to affected participants.</td>
+<td>Treatment plan, responsible parties, deadlines, status, and evidence of execution.</td>
+</tr>
+<tr>
+<td>Verification and closure</td>
+<td>Data Stewardship function and body responsible for the decision.</td>
+<td>Verify completion and record results, outstanding issues, and remaining limitations.</td>
+<td>Decision, evidence, updated records, limitations, and closure condition.</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>Body competent to review the decision.</td>
+<td>Re-examine the occurrence when new information, a change of context, an error, or a substantiated challenge arises.</td>
+<td>Review request, new decision, rationale, and resulting changes.</td>
+</tr>
+</table>
+<h2>7.1 Nature of data-related occurrences</h2>
+<p>Occurrences may have more than one nature. The purpose of their classification is to help identify the participants and institutional functions that must be involved, without replacing the analysis required in each situation.</p>
+<table>
+<tr>
+<th>Nature</th>
+<th>Characterization</th>
+</tr>
+<tr>
+<td>Technical</td>
+<td>Related to processing, storage, access, integration, availability, or technical control.</td>
+</tr>
+<tr>
+<td>Semantic</td>
+<td>Related to data meaning, definition, business rule, or interpretation.</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td>Related to completeness, consistency, validity, timeliness, uniqueness, or fitness for use.</td>
+</tr>
+<tr>
+<td>Organizational</td>
+<td>Related to responsibility, decision right, communication, conflict between domains, or absence of coordination.</td>
+</tr>
+<tr>
+<td>Traceability</td>
+<td>Related to origin, context, transformations, versions, or responsible parties.</td>
+</tr>
+<tr>
+<td>Use and compliance</td>
+<td>Related to access conditions, purpose, restrictions, privacy, security, ethics, or institutional obligation.</td>
+</tr>
+</table>
+<h2>8. Records expected by the framework</h2>
+<p>The framework does not mandate particular tools. Records may be maintained in catalogs, glossaries, ticketing systems, document repositories, or other mechanisms adopted by the organization, provided that the minimum information and purpose of each record are preserved.</p>
+<table>
+<tr>
+<th>Record</th>
+<th>Minimum content</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td>Asset identification</td>
+<td>Name, description, domain, responsible party, source system, and classification.</td>
+<td>Identify the asset and the participants responsible for monitoring it.</td>
+</tr>
+<tr>
+<td>Business definition</td>
+<td>Meaning, purpose, applicable rules, restrictions, responsible party, and approval date.</td>
+<td>Reduce divergent interpretations and record conditions of use.</td>
+</tr>
+<tr>
+<td>Occurrence</td>
+<td>Description, affected data, origin, impact, evidence, and monitoring owner.</td>
+<td>Enable analysis, referral, and monitoring of the problem.</td>
+</tr>
+<tr>
+<td>Decision</td>
+<td>Competent body, participants, alternatives considered, criteria, decision, and rationale.</td>
+<td>Record who decided, how the decision was made, and which criteria were used.</td>
+</tr>
+<tr>
+<td>Treatment plan</td>
+<td>Actions, responsible parties, deadlines, status, and evidence of completion.</td>
+<td>Monitor execution of defined actions.</td>
+</tr>
+<tr>
+<td>Provenance and transformation</td>
+<td>Origin, context, transformations, versions, systems, dates, and responsible parties.</td>
+<td>Enable reconstruction of the data trajectory throughout its life cycle.</td>
+</tr>
+<tr>
+<td>Exception</td>
+<td>Rule excepted, rationale, approver, conditions, deadline, and review date.</td>
+<td>Delimit temporary situations that do not follow the institutional standard.</td>
+</tr>
+<tr>
+<td>Known limitation</td>
+<td>Problem, impact, condition of use, use not recommended, and monitoring owner.</td>
+<td>Communicate restrictions that remain even after occurrence treatment.</td>
+</tr>
+</table>
+<h2>9. Application throughout the data life cycle</h2>
+<p>Data Stewardship accompanies the relationship between institutional guidelines and data-related activities throughout the life cycle. It does not replace technical or specialized functions; rather, it articulates responsibilities, records, and referrals.</p>
+<table>
+<tr>
+<th>Stage</th>
+<th>Data Stewardship activity</th>
+<th>Participation of other functions</th>
+</tr>
+<tr>
+<td>Creation or acquisition</td>
+<td>Verify identification of the responsible party, definition, purpose, and initial data requirements.</td>
+<td>The domain defines meaning and purpose; Data Custody records technical origin.</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>Monitor the application of requirements and communicate occurrences related to defined conditions.</td>
+<td>Data Custody maintains availability, protection, access, and technical controls.</td>
+</tr>
+<tr>
+<td>Processing and transformation</td>
+<td>Verify meaning and recording of changes made.</td>
+<td>Technical teams perform transformations; Data Curation records context, versions, and provenance.</td>
+</tr>
+<tr>
+<td>Sharing</td>
+<td>Check purpose, restrictions, responsibilities, and conditions of use.</td>
+<td>Governance, the domain, and specialized functions approve applicable conditions.</td>
+</tr>
+<tr>
+<td>Use</td>
+<td>Monitor doubts, occurrences, deviations, and changes of purpose.</td>
+<td>Users and business areas report issues and observe defined conditions.</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>Coordinate examination of changes in meaning, quality, purpose, or responsibility.</td>
+<td>Domain, Curation, and Custody update definitions, records, and controls.</td>
+</tr>
+<tr>
+<td>Archiving or disposal</td>
+<td>Verify the existence of the decision, responsible parties, and corresponding record.</td>
+<td>Governance, the domain, Custody, and specialized functions apply institutional criteria.</td>
+</tr>
+</table>
+<h2>10. Adaptation to different organizational structures</h2>
+<p>The framework may be applied in centralized, federated, or hybrid structures. Adaptation changes the distribution of responsibilities and decision rights but does not remove the need for coordination, recording, referral, monitoring, and review. The configuration adopted depends on the organizational structure, Data Governance maturity, and distribution of business domains (van Donge, Bharosa and Janssen, 2022; Vojvodic and Hitz, 2019).</p>
+<table>
+<tr>
+<th>Structure</th>
+<th>Distribution of responsibilities</th>
+<th>Coordination</th>
+<th>Matters requiring monitoring</th>
+</tr>
+<tr>
+<td>Centralized</td>
+<td>A common unit concentrates standards, decisions, and part of the Data Stewardship activities.</td>
+<td>Coordination occurs through the central unit and its points of contact with the domains.</td>
+<td>Distance from local conditions, concentration of decisions, and delay in handling occurrences.</td>
+</tr>
+<tr>
+<td>Federated</td>
+<td>Domains exercise responsibilities and decisions within common limits defined by Governance.</td>
+<td>Shared bodies maintain standards, handle conflicts, and receive issues that exceed a domain.</td>
+<td>Domain divergence, overlapping responsibilities, and uneven application of standards.</td>
+</tr>
+<tr>
+<td>Hybrid</td>
+<td>Institutional decisions remain centralized while activities and specific decisions are distributed.</td>
+<td>Coordination combines central bodies with responsible parties and functions located in domains.</td>
+<td>Ambiguity over decision limits and inadequate referral between bodies.</td>
+</tr>
+</table>
+<p class="source">Source: Prepared by the author based on van Donge, Bharosa and Janssen (2022), Vojvodic and Hitz (2019), and Stepanovic, Marmier and Mettler (2025).</p>
+<p>Role nomenclature, number of participants, composition of collegial bodies, tools used, record format, review frequency, and approval levels may be adapted. These choices must be documented so that participants understand their responsibilities and referral paths.</p>
+<p>The following cannot be removed: identification of responsible parties, limits of decision rights, coordination mechanisms, occurrence recording, definition of the competent body, monitoring of actions, and the possibility of review. These components are the minimum conditions for preserving the artifact’s internal coherence.</p>
+<h2>11. Hypothetical operating example</h2>
+<p>Consider a financial institution that uses a predictive model to support the analysis of credit applications. The model was developed with historical transaction data, payment history, and variables related to customer location.</p>
+<p>During a periodic review, negative model decisions are found to be concentrated disproportionately among particular customer groups. It is also found that part of the training data has purpose restrictions or conditions of use that need to be reassessed. The situation involves quality, traceability, responsible use of data, and assignment of responsibilities for model-supported decisions.</p>
+<p>The Data Stewardship function records the occurrence, identifies the potentially affected data, models, reports, and decisions, and coordinates participation of the areas involved. The data domain owner clarifies purpose of use, business rules, and applicable requirements. Data Curation gathers definitions of the variables used, their metadata, provenance, and recorded use restrictions. Data Custody identifies the systems, sources, transformations, and technical flows related to the data used by the model.</p>
+<p>Because the occurrence involves different domains, possible effects on third parties, and matters beyond the competence of a single area, it is referred to the Data Governance body and the competent institutional functions for privacy, compliance, risk, and legal matters. The decision may determine suspension or review of the use of certain variables, update of recorded conditions of use, review of rules applicable to the model, and definition of necessary actions.</p>
+<p>After the decision, records of the occurrence, definitions and restrictions associated with the data, model documentation, evidence used in the analysis, and the treatment plan must be updated. If known limitations or risks remain, they must be recorded and communicated to the responsible participants.</p>
+<p>The example considers that data quality and composition problems may create risks of discrimination in automated decisions, requiring attention to the variables used and the effects of their application (Vetrò, Torchiano and Mecati, 2021). It also considers the need to maintain information about origin, context, transformations, responsible parties, and data-use conditions so that the trajectory of model-supported decisions can be examined (Li et al., 2026).</p>
+<p>Assignment of responsibilities, decision recording, and referral to competent bodies are consistent with discussions of transparency, trust, and accountability in Data Governance. These mechanisms do not eliminate the risks involved, but they allow decisions, the criteria used, and actions taken to be identified and examined later (van der Sloot and Keymolen, 2022; Macaulay et al., 2025).</p>
+<p class="source">Source: Prepared by the author.</p>
+<p>The example demonstrates the framework’s internal functioning. It does not represent implementation, a case study, or proof of effectiveness.</p>
+<h2>12. Correspondence between the framework, the Kit, and the assessment</h2>
+<p>The Evaluation Kit materials present the same artifact at different levels of detail. The structured presentation offers a synthetic view; the descriptive memorandum explains the essential elements; the specification consolidates the components and limits; and the hypothetical example demonstrates its operation. No material may introduce roles, rules, or components absent from this specification.</p>
+<table>
+<tr>
+<th>Framework component</th>
+<th>Kit material</th>
+<th>Assessment dimension</th>
+</tr>
+<tr>
+<td>Roles, responsibilities, decision rights, and limits of action</td>
+<td>Consolidated specification, descriptive memorandum, and structured presentation.</td>
+<td>A. Roles and Decision Rights</td>
+</tr>
+<tr>
+<td>Relationships among technical areas, business domains, and Data Governance bodies</td>
+<td>Consolidated specification, descriptive memorandum, and hypothetical example.</td>
+<td>B. Sociotechnical Coordination</td>
+</tr>
+<tr>
+<td>Accountability, decision records, review, and referral</td>
+<td>Consolidated specification, descriptive memorandum, and hypothetical example.</td>
+<td>C. Accountability and Duty of Care</td>
+</tr>
+<tr>
+<td>Data quality, integrity, origin, transformations, and traceability</td>
+<td>Consolidated specification, descriptive memorandum, and hypothetical example.</td>
+<td>D. Integrity, Quality, and Traceability</td>
+</tr>
+<tr>
+<td>Application in centralized, federated, or hybrid structures</td>
+<td>Consolidated specification, descriptive memorandum, and structured presentation.</td>
+<td>E. Organizational Adaptation</td>
+</tr>
+</table>
+<p class="source">Source: Prepared by the author.</p>
+<p>After reviewing the Kit, experts will answer a questionnaire organized according to the five framework dimensions. The instrument contains ten closed items on a five-point Likert scale and six open-ended questions. The responses allow the clarity, internal coherence, and perceived applicability of the artifact to be examined. The assessment does not encompass framework implementation or verification of its effects on data quality, integrity, or data-related risks in an organization.</p>
+<h2>References</h2>
+<p>AIKEN, P. EXPERIENCE: Succeeding at Data Management-BigCo Attempts to Leverage Data. <em>ACM </em><em>Journal</em><em> </em><em>of</em><em> Data </em><em>and</em><em> </em><em>Information</em><em> </em><em>Quality</em>, v. 7, n. 1-2, 2016. DOI: https://doi.org/10.1145/2893482.</p>
+<p>DAMA INTERNATIONAL. <em>DAMA-DMBOK: data management body </em><em>of</em><em> </em><em>knowledge</em>. 2. ed. Basking Ridge: Technics Publications, 2017.</p>
+<p>KROPSHOFER, J. et al. A Survey on the Functionalities of Data Catalog Tools. <em>IEEE Access</em>, v. 13, p. 83297-83319, 2025. DOI: https://doi.org/10.1109/ACCESS.2025.3568542.</p>
+<p>LI, R. B. et al. A birth certificate for data to improve findability, accountability, and traceability. <em>NAR </em><em>Genomics</em><em> </em><em>and</em><em> </em><em>Bioinformatics</em>, v. 8, n. 2, 2026. DOI: https://doi.org/10.1093/nargab/lqag037.</p>
+<p>MACAULAY, Y. et al. Improving transparency in data access processes: Developing best practice standards and promoting system-wide change through a competitive funding call. <em>International</em><em> </em><em>Journal</em><em> </em><em>of</em><em> </em><em>Population</em><em> Data Science</em>, v. 10, n. 2 Special issue, 2025. DOI: https://doi.org/10.23889/ijpds.v10i2.2949.</p>
+<p>PENG, G. et al. Scientific stewardship in the open data and big data era - roles and responsibilities of stewards and other major product stakeholders. <em>D-</em><em>Lib</em><em> Magazine</em>, v. 22, n. 5-6, p. 1, 2016. DOI: https://doi.org/10.1045/may2016-peng.</p>
+<p>PLOTKIN, D. <em>Data stewardship: </em><em>an</em><em> </em><em>actionable</em><em> </em><em>guide</em><em> </em><em>to</em><em> </em><em>effective</em><em> data management </em><em>and</em><em> data </em><em>governance</em>. 2. ed. London: Academic Press, 2021.</p>
+<p>STEPANOVIC, S.; MARMIER, A.; METTLER, T. Open research data integration in universities: How data stewards adapt global policies to local contexts. <em>Journal</em><em> </em><em>of</em><em> </em><em>the</em><em> </em><em>Association</em><em> for </em><em>Information</em><em> Science </em><em>and</em><em> Technology</em>, v. 76, n. 13, p. 1754-1767, 2025. DOI: https://doi.org/10.1002/asi.70034.</p>
+<p>VAN DER SLOOT, B.; KEYMOLEN, E. Can we trust trust-based data governance models? <em>Data &amp; </em><em>Policy</em>, v. 4, 2022. DOI: https://doi.org/10.1017/dap.2022.36.</p>
+<p>VAN DONGE, W.; BHAROSA, N.; JANSSEN, M. F. W. H. A. Data-driven government: Cross-case comparison of data stewardship in data ecosystems. <em>Government</em><em> </em><em>Information</em><em> </em><em>Quarterly</em>, v. 39, n. 2, 2022. DOI: https://doi.org/10.1016/j.giq.2021.101642.</p>
+<p>VETRÒ, A.; TORCHIANO, M.; MECATI, M. A data quality approach to the identification of discrimination risk in automated decision making systems. <em>Government</em><em> </em><em>Information</em><em> </em><em>Quarterly</em>, v. 38, n. 4, 2021. DOI: https://doi.org/10.1016/j.giq.2021.101619.</p>
+<p>VOJVODIC, M.; HITZ, C. GOVERNANCE TEAM LEADERSHIP AND BUSINESS USER PARTICIPATION - ORGANIZATIONAL PRACTICES FOR INNOVATIVE CUSTOMER ENGAGEMENT IN DATA COMPLIANCE PROJECT. <em>Central </em><em>European</em><em> Business Review</em>, v. 8, n. 2, p. 15-45, 2019. DOI: https://doi.org/10.18267/j.cebr.214.</p>
+<div class="callout">
+<strong>Evaluation limit:</strong> this material supports the assessment of the framework’s clarity, internal coherence, and perceived applicability. It does not represent implementation, a case study, or proof of effectiveness.</div>
+<nav class="actions"><a class="button" href="index-en.html">Back to Evaluation Kit</a><a class="button alt" id="link-questionario" href="#">Go to questionnaire</a></nav></main><footer><div class="wrap">Master's Research | Data Governance and Data Stewardship</div></footer><script src="links.js"></script>
+</body>
+</html>

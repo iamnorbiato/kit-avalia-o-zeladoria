@@ -14,6 +14,9 @@
       .brand { min-height:76px; display:flex; align-items:center; gap:15px; }
       .monogram { width:38px; height:38px; display:grid; place-items:center; border:1px solid #87a8c9; border-radius:50%; font-weight:700; }
       .brand p { margin:0; font-size:.83rem; color:#dce7f0; }
+      .language { margin-left:auto; display:flex; gap:7px; }
+      .language a { padding:5px 8px; border:1px solid #87a8c9; border-radius:4px; color:#fff; font-size:.76rem; font-weight:700; text-decoration:none; }
+      .language a.active { background:#fff; color:var(--navy); }
       main { padding:48px 0 56px; }
       .eyebrow { color:var(--teal); font-size:.8rem; font-weight:700; letter-spacing:.13em; text-transform:uppercase; }
       h1,h2,h3 { line-height:1.15; margin:0; }
@@ -45,7 +48,7 @@
     <header>
       <div class="page brand">
         <div class="monogram" aria-hidden="true">MN</div>
-        <div><strong>Pesquisa de Mestrado</strong><p>Governança de Dados e Zeladoria de Dados</p></div>
+        <div><strong>Pesquisa de Mestrado</strong><p>Governança de Dados e Zeladoria de Dados</p></div><nav class="language" aria-label="Idioma"><a class="active" href="index.html" title="Português">🇧🇷 PT</a><a href="index-en.html" title="English">🇬🇧 EN</a></nav>
       </div>
     </header>
 

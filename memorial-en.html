@@ -11,6 +11,12 @@
 
 header .wrap{display:flex;align-items:center;gap:12px}
 @media(max-width:520px){header .wrap{align-items:flex-start}.language{margin-left:0}}
+
+/* Header layout shared by every document page. */
+header .wrap{display:grid !important;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:24px}
+header .wrap > div:first-child{min-width:0}
+header .wrap .language{margin:0;justify-self:end;white-space:nowrap}
+@media(max-width:520px){header .wrap{grid-template-columns:1fr;row-gap:10px}.language{justify-self:start !important}}
 </style>
 </head>
 <body>

@@ -12,6 +12,12 @@
 
 header .wrap{display:flex;align-items:center;gap:12px}
 @media(max-width:520px){header .wrap{align-items:flex-start}.language{margin-left:0}}
+
+/* Header layout shared by every document page. */
+header .wrap{display:grid !important;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:24px}
+header .wrap > div:first-child{min-width:0}
+header .wrap .language{margin:0;justify-self:end;white-space:nowrap}
+@media(max-width:520px){header .wrap{grid-template-columns:1fr;row-gap:10px}.language{justify-self:start !important}}
 </style>
 </head>
 <body>
@@ -23,10 +29,10 @@ header .wrap{display:flex;align-items:center;gap:12px}
 </div></header><main class="wrap"><h1>
 <em><strong>Framework</strong></em><strong> Organizacional de Zeladoria de Dados</strong>
 </h1>
-<h2>Especificação consolidada do artefato, versão 2.0</h2>
-<p><strong>Autor:</strong> Marco Antonio Norbiato</p>
-<p><strong>Situação:</strong> versão preliminar para avaliação por especialistas</p>
-<p><strong>Finalidade:</strong> apresentar os componentes, as relações internas e os limites do framework organizacional de Zeladoria de Dados.</p>
+<p class="meta"><strong>Especificação consolidada do artefato, versão 2.0</strong></p>
+<p class="meta"><strong>Autor:</strong> Marco Antonio Norbiato</p>
+<p class="meta"><strong>Situação:</strong> versão preliminar para avaliação por especialistas</p>
+<p class="meta"><strong>Finalidade:</strong> apresentar os componentes, as relações internas e os limites do framework organizacional de Zeladoria de Dados.</p>
 <h2>1. Apresentação</h2>
 <p>Este documento apresenta a versão preliminar do <em>Framework</em> Organizacional de Zeladoria de Dados desenvolvido nesta pesquisa. O artefato organiza a relação entre as diretrizes da Governança de Dados e as atividades permanentes de definição de responsabilidades, coordenação entre áreas, registro de decisões, encaminhamento de ocorrências e acompanhamento dos ativos de dados.</p>
 <p>A Zeladoria de Dados é tratada como uma prática organizacional estruturada. Sua função pode ser exercida por um zelador de dados formalmente designado, por participantes distribuídos entre os domínios de negócio ou por uma instância colegiada. Essa possibilidade não elimina a necessidade de identificar as responsabilidades, os direitos de decisão e os limites de atuação aplicáveis a cada participante ou instância.</p>

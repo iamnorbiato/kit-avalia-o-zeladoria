@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Mapa geral do Framework Organizacional de Zeladoria de Dados</title>
+  <desc id="desc">Síntese visual das camadas de direcionamento normativo e de coordenação e operacionalização, das dimensões transversais, dos níveis organizacionais e dos efeitos que o framework pretende favorecer.</desc>
+  <style>
+    .bg{fill:#f5f8fa}.card{fill:#fff;stroke:#d8e1e6;stroke-width:2}.norm{fill:#082b57}.coord{fill:#007b83}.orange{fill:#d76500}.soft-orange{fill:#fff3e8}.line{stroke:#b8c6d1;stroke-width:2}.arrow{stroke:#082b57;stroke-width:4;fill:none;marker-end:url(#arrow)}
+    .title{font:700 34px Arial,Helvetica,sans-serif;fill:#082b57}.subtitle{font:400 19px Arial,Helvetica,sans-serif;fill:#586575}.layer{font:700 24px Arial,Helvetica,sans-serif;fill:#fff}.layer-sub{font:600 17px Arial,Helvetica,sans-serif;fill:#d8e8f2}.label{font:700 18px Arial,Helvetica,sans-serif;fill:#082b57}.small{font:400 15px Arial,Helvetica,sans-serif;fill:#334254}.dim{font:700 15px Arial,Helvetica,sans-serif;fill:#082b57}.level{font:700 17px Arial,Helvetica,sans-serif;fill:#fff}.effect{font:700 17px Arial,Helvetica,sans-serif;fill:#9a4300}.caption{font:400 14px Arial,Helvetica,sans-serif;fill:#586575}
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#082b57"/></marker></defs>
+  <rect class="bg" width="1600" height="1040" rx="28"/>
+  <text x="72" y="74" class="title">MAPA GERAL DO FRAMEWORK ORGANIZACIONAL DE ZELADORIA DE DADOS</text>
+  <text x="72" y="108" class="subtitle">Síntese das estruturas, relações e efeitos que orientam a avaliação do artefato</text>
+  <rect x="72" y="158" width="1160" height="226" rx="16" class="card"/><rect x="72" y="158" width="1160" height="66" rx="16" class="norm"/>
+  <text x="108" y="198" class="layer">CAMADA DE DIRECIONAMENTO NORMATIVO</text><text x="706" y="198" class="layer-sub">Governança de Dados</text>
+  <line x1="362" y1="253" x2="362" y2="350" class="line"/><line x1="648" y1="253" x2="648" y2="350" class="line"/><line x1="934" y1="253" x2="934" y2="350" class="line"/>
+  <text x="104" y="283" class="label">Princípios e políticas</text><text x="104" y="310" class="small">Direcionam o uso dos dados</text>
+  <text x="394" y="283" class="label">Padrões e critérios</text><text x="394" y="310" class="small">Estabelecem referências comuns</text>
+  <text x="680" y="283" class="label">Direitos de decisão</text><text x="680" y="310" class="small">Definem autoridade e limites</text>
+  <text x="966" y="283" class="label">Responsabilização</text><text x="966" y="310" class="small">Orienta a prestação de contas</text>
+  <path d="M650 407 L650 444" class="arrow"/><text x="676" y="431" class="label">Articulação</text>
+  <rect x="72" y="458" width="1160" height="232" rx="16" class="card"/><rect x="72" y="458" width="1160" height="66" rx="16" class="coord"/>
+  <text x="108" y="498" class="layer">CAMADA DE COORDENAÇÃO E OPERACIONALIZAÇÃO</text><text x="836" y="498" class="layer-sub">Zeladoria de Dados</text>
+  <line x1="458" y1="553" x2="458" y2="654" class="line"/><line x1="844" y1="553" x2="844" y2="654" class="line"/>
+  <text x="112" y="584" class="label">Domínios de negócio</text><text x="112" y="611" class="small">Produzem, utilizam e contextualizam</text>
+  <text x="492" y="584" class="label">Função de Zeladoria</text><text x="492" y="611" class="small">Coordena, registra e encaminha</text>
+  <text x="876" y="584" class="label">Custódia e Curadoria</text><text x="876" y="611" class="small">Executam controles e mantêm contexto</text>
+  <text x="112" y="652" class="caption">A função pode ser exercida por pessoa formalmente designada, participantes distribuídos ou instância colegiada.</text>
+  <rect x="1270" y="158" width="258" height="532" rx="16" class="card"/><text x="1305" y="202" class="label">NÍVEIS</text><text x="1305" y="228" class="label">ORGANIZACIONAIS</text>
+  <rect x="1302" y="262" width="194" height="78" rx="10" class="norm"/><text x="1330" y="309" class="level">Estratégico</text>
+  <rect x="1302" y="382" width="194" height="78" rx="10" class="coord"/><text x="1353" y="429" class="level">Tático</text>
+  <rect x="1302" y="502" width="194" height="78" rx="10" class="orange"/><text x="1324" y="549" class="level">Operacional</text>
+  <text x="1302" y="628" class="caption">As decisões e atividades podem</text><text x="1302" y="650" class="caption">ocorrer em níveis diferentes.</text>
+  <rect x="72" y="728" width="1456" height="114" rx="16" class="card"/><text x="107" y="764" class="label">DIMENSÕES TRANSVERSAIS</text>
+  <line x1="362" y1="750" x2="362" y2="815" class="line"/><line x1="637" y1="750" x2="637" y2="815" class="line"/><line x1="913" y1="750" x2="913" y2="815" class="line"/><line x1="1190" y1="750" x2="1190" y2="815" class="line"/>
+  <text x="101" y="795" class="dim">Papéis e direitos</text><text x="101" y="816" class="dim">de decisão</text>
+  <text x="392" y="795" class="dim">Coordenação</text><text x="392" y="816" class="dim">sociotécnica</text>
+  <text x="667" y="795" class="dim">Responsabilização</text><text x="667" y="816" class="dim">e dever de cuidado</text>
+  <text x="943" y="795" class="dim">Integridade, qualidade</text><text x="943" y="816" class="dim">e rastreabilidade</text>
+  <text x="1220" y="795" class="dim">Adaptação</text><text x="1220" y="816" class="dim">organizacional</text>
+  <rect x="72" y="878" width="1456" height="106" rx="16" class="soft-orange" stroke="#d76500" stroke-width="2"/>
+  <text x="107" y="917" class="effect">EFEITOS QUE O FRAMEWORK PRETENDE FAVORECER</text>
+  <line x1="470" y1="900" x2="470" y2="955" stroke="#e8bd98" stroke-width="2"/><line x1="822" y1="900" x2="822" y2="955" stroke="#e8bd98" stroke-width="2"/><line x1="1162" y1="900" x2="1162" y2="955" stroke="#e8bd98" stroke-width="2"/>
+  <text x="176" y="950" class="effect">Integridade</text><text x="534" y="950" class="effect">Rastreabilidade</text><text x="884" y="950" class="effect">Responsabilização</text><text x="1200" y="950" class="effect">Acompanhamento de riscos</text>
+</svg>

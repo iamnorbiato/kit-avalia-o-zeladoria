@@ -162,3 +162,38 @@ tr:nth-child(even) td { background: #fafcfc; }
   table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: .82rem; }
   th, td { min-width: 140px; }
 }
+
+
+/* Sínteses visuais do framework */
+.visual-section { margin-top: 52px; }
+.visual-section h2 { margin-bottom: 10px; }
+.visual-section > p { max-width: 810px; color: var(--muted); }
+.framework-visual {
+  width: clamp(320px, 100%, 1040px);
+  max-width: 100%;
+  margin: 24px auto 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 4px 15px rgba(8,43,87,.05);
+}
+.framework-visual img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.framework-visual figcaption {
+  margin: 12px 4px 2px;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.45;
+  text-align: left;
+}
+.document-main .framework-visual { margin-top: 20px; margin-bottom: 24px; }
+@media (max-width: 700px) {
+  .framework-visual { min-width: 0; padding: 8px; }
+  .framework-visual figcaption { margin: 10px 2px 2px; }
+}

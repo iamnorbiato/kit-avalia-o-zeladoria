@@ -169,7 +169,6 @@ tr:nth-child(even) td { background: #fafcfc; }
 .visual-section h2 { margin-bottom: 10px; }
 .visual-section > p { max-width: 810px; color: var(--muted); }
 .framework-visual {
-  width: clamp(320px, 100%, 1040px);
   max-width: 100%;
   margin: 24px auto 0;
   padding: 14px;
@@ -178,6 +177,10 @@ tr:nth-child(even) td { background: #fafcfc; }
   background: var(--paper);
   box-shadow: 0 4px 15px rgba(8,43,87,.05);
 }
+/* Cada visual tem uma escala própria: síntese, fluxo e matriz não competem com o texto. */
+.framework-visual--overview { width: clamp(320px, 84%, 860px); }
+.framework-visual--flow { width: clamp(320px, 74%, 740px); }
+.framework-visual--matrix { width: clamp(320px, 88%, 900px); }
 .framework-visual img {
   display: block;
   width: 100%;
@@ -194,6 +197,9 @@ tr:nth-child(even) td { background: #fafcfc; }
 }
 .document-main .framework-visual { margin-top: 20px; margin-bottom: 24px; }
 @media (max-width: 700px) {
-  .framework-visual { min-width: 0; padding: 8px; }
+  .framework-visual,
+  .framework-visual--overview,
+  .framework-visual--flow,
+  .framework-visual--matrix { width: 100%; min-width: 0; padding: 8px; }
   .framework-visual figcaption { margin: 10px 2px 2px; }
 }
